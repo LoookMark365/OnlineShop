@@ -1,5 +1,6 @@
 package org.ljy.shop.dao.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.ljy.domain.Goods;
@@ -26,21 +27,23 @@ public class ShopDaoImpl implements IShopDao {
 	}
 
 	@Override
-	public List<Goods> queryGoodsByGoodsName(String goodsName) {
+	public List<Goods> queryGoodsByGoodsName(ArrayList<String> goodsNameAndShopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(String goodsID) {
+	public Goods queryGoodsByGoodsID(ArrayList<String> goodsIDAndShopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> queryAll() {
+	public List<Goods> queryAll(String goodsID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+	
 
 }

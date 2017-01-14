@@ -1,5 +1,6 @@
 package org.ljy.shop.service.impl;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.ljy.domain.Goods;
@@ -33,21 +34,23 @@ public class IShopServiceImpl implements IShopService {
 	}
 
 	@Override
-	public List<Goods> queryGoodsByGoodsName(String goodsName) {
+	public List<Goods> queryGoodsByGoodsName(ArrayList<String> goodsNameAndShopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(String goodsID) {
+	public Goods queryGoodsByGoodsID(ArrayList<String> goodsIDAndShopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> listAll() {
+	public List<Goods> queryAll(String goodsID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
 
 }

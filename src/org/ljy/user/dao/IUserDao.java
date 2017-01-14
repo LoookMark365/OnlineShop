@@ -2,7 +2,6 @@ package org.ljy.user.dao;
 
 import java.util.List;
 
-import org.apache.ibatis.annotations.Insert;
 import org.ljy.domain.User;
 
 public interface IUserDao {
