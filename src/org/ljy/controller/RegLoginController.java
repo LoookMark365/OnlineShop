@@ -17,19 +17,18 @@ public class RegLoginController{
 	
 	@RequestMapping("/user_reg")
 	public String userRegPage(){
-		return "userReg";
+		return "user/userReg";
 	}
 	
 	@RequestMapping("/user_reg/confirm")
 	public String user_Register(User user){
 		System.out.println(user);
-		
 		return "redirect:/";
 	}
 	
 	@RequestMapping("/user_login")
 	public String userLogin(){
-		return "login";
+		return "user/userLogin";
 	}
 	
 }

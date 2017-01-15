@@ -8,23 +8,23 @@ public interface IShoppingCartDao {
 	/**
 	 * 添加商品
 	 * 
-	 * @param goods
+	 * @param cartID,goodsID, goodsNum
 	 */
-	public void addGoods(Goods goods);
+	public void addGoods(String cartID,String goodsID,int goodsNum);
 
 	/**
 	 * 删除一个商品
 	 * 
-	 * @param goods
+	 * @param cartID,goodsID
 	 */
-	public void deleteGoods(Goods goods);
+	public void deleteGoods(String cartID,String goodsID);
 
 	/**
 	 * 更新商品信息
 	 * 
-	 * @param goods
+	 * @param cartID,goodsID
 	 */
-	public void updateGoods(Goods goods);
+	public void updateGoods(String cartID,String goodsID);
 
 	/**
 	 * 按商品名查询商品
@@ -48,5 +48,6 @@ public interface IShoppingCartDao {
 	 * @return List<Goods>
 	 */
 	public List<Goods> listAll();
+
 
 }

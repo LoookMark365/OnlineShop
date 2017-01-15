@@ -9,19 +9,19 @@ import org.springframework.stereotype.Repository;
 public class ShoppingCartImpl implements IShoppingCartDao {
 
 	@Override
-	public void addGoods(Goods goods) {
+	public void addGoods(String cartID, String goodsID,int goodsNum) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void deleteGoods(Goods goods) {
+	public void deleteGoods(String cartID, String goodsID) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updateGoods(Goods goods) {
+	public void updateGoods(String cartID, String goodsID) {
 		// TODO Auto-generated method stub
 		
 	}

@@ -12,12 +12,12 @@
 <title>用户登录</title>
 
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/login.css">
+	href="${pageContext.request.contextPath}/css/user/login.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/common.css">
 <script src="/OnlineShop/js/jquery-1.8.3.min.js"></script>
 <script src="/OnlineShop/js/geetest.js"></script>
-<script src="/OnlineShop/js/login.js"></script>
+<script src="/OnlineShop/js/user/login.js"></script>
 </head>
 
 <body>

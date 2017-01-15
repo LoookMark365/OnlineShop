@@ -11,6 +11,6 @@ public class SearchController {
 	public String search(String keyWord,HttpServletRequest request){
 		System.out.println("搜索关键字："+keyWord);
 		request.getSession().setAttribute("keyWord", keyWord);
-		return "searchResult";
+		return "search/searchResult";
 	}
 }

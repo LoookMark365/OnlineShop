@@ -8,36 +8,37 @@ public interface IShoppingCartService {
 	/**
 	 * 加入购物车
 	 * 
-	 * @param goos
+	 * @param cartID,goodsID,num
 	 */
-	public void addToShoppingCart(Goods goos);
+	public void addToShoppingCart(String cartID, String goodsID, int num);
 
 	/**
 	 * 移除商品
 	 * 
-	 * @param goods
+	 * @param cartID,goodsID
 	 */
-	public void removeGoods(Goods goods);
+	public void removeGoods(String cartID, String goodsID);
 
 	/**
 	 * 移除所有商品
 	 * 
-	 * @param goods
+	 * @param cartID
 	 */
-	public void removeAll(List<Goods> goods);
+	public void removeAll(String cartID);
 
 	/**
 	 * 列出所有商品
 	 * 
+	 * @param cartID
 	 * @return 所有商品List<Goods>
 	 */
-	public List<Goods> listAll();
+	public List<Goods> listAll(String cartID);
 
 	/**
-	 * 支付
+	 * 结算
 	 * 
-	 * @param goods
+	 * @param cartID
 	 * @return 商品总价
 	 */
-	public double pay(List<Goods> goods);
+	public double balance(String cartID);
 }

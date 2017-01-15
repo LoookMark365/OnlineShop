@@ -11,7 +11,7 @@
 
 <title>用户注册</title>
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/userReg.css">
+	href="${pageContext.request.contextPath}/css/user/userReg.css">
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/common.css">
 </head>

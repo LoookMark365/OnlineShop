@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/common.css">
 <link rel="stylesheet" type="text/css"
-	href="${pageContext.request.contextPath}/css/searchResult.css">
+	href="${pageContext.request.contextPath}/css/search/searchResult.css">
 
 </head>
 

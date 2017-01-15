@@ -2,6 +2,8 @@ package org.ljy.domain;
 
 import java.util.ArrayList;
 
+import org.ljy.common.OrderStatement;
+
 /**
  * 订单
  * @author 廖俊瑶
@@ -12,6 +14,7 @@ public class Order {
 	private String orderID;//订单ID
 	private String time;//日期
 	private ArrayList<Goods> goods;//商品
+	private OrderStatement statement;//订单状态
 	public String getUserID() {
 		return userID;
 	}
@@ -35,6 +38,12 @@ public class Order {
 	}
 	public void setGoods(ArrayList<Goods> goods) {
 		this.goods = goods;
+	}
+	public OrderStatement getStatement() {
+		return statement;
+	}
+	public void setStatement(OrderStatement statement) {
+		this.statement = statement;
 	}
 	
 
