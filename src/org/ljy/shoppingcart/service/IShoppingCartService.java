@@ -1,5 +1,6 @@
 package org.ljy.shoppingcart.service;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.ljy.domain.Goods;
@@ -8,16 +9,16 @@ public interface IShoppingCartService {
 	/**
 	 * 加入购物车
 	 * 
-	 * @param cartID,goodsID,num
+	 * @param cartIDGoodsIDAndGoodsNum
 	 */
-	public void addToShoppingCart(String cartID, String goodsID, int num);
+	public void addToShoppingCart(HashMap<String, Object> cartIDGoodsIDAndGoodsNum);
 
 	/**
 	 * 移除商品
 	 * 
-	 * @param cartID,goodsID
+	 * @param cartIDAndGoodsID
 	 */
-	public void removeGoods(String cartID, String goodsID);
+	public void removeGoods(HashMap<String, Object> cartIDAndGoodsID);
 
 	/**
 	 * 移除所有商品

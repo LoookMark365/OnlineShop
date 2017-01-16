@@ -1,5 +1,6 @@
 package org.ljy.shoppingcart.dao.impl;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.ljy.domain.Goods;
@@ -9,40 +10,39 @@ import org.springframework.stereotype.Repository;
 public class ShoppingCartImpl implements IShoppingCartDao {
 
 	@Override
-	public void addGoods(String cartID, String goodsID,int goodsNum) {
+	public void addGoods(HashMap<String, Object> cartIDGoodsIDAndGoodsNum) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void deleteGoods(String cartID, String goodsID) {
+	public void deleteGoods(HashMap<String, Object> cartIDAndGoodsID) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updateGoods(String cartID, String goodsID) {
+	public void updateGoods(HashMap<String, Object> cartIDAndGoodsID) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public List<Goods> queryGoodsByGoodsName(String goodsName) {
+	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> cartIDAndGoodsName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(String goodsID) {
+	public Goods queryGoodsByGoodsID(HashMap<String, Object> cartIDAndGoodsID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> listAll() {
+	public List<Goods> listAll(String cartID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
 
 }

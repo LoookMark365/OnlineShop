@@ -1,5 +1,6 @@
 package org.ljy.shoppingcart.dao;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.ljy.domain.Goods;
@@ -8,46 +9,47 @@ public interface IShoppingCartDao {
 	/**
 	 * 添加商品
 	 * 
-	 * @param cartID,goodsID, goodsNum
+	 * @param cartIDGoodsIDAndGoodsNum
 	 */
-	public void addGoods(String cartID,String goodsID,int goodsNum);
+	public void addGoods(HashMap<String, Object> cartIDGoodsIDAndGoodsNum);
 
 	/**
 	 * 删除一个商品
 	 * 
-	 * @param cartID,goodsID
+	 * @param cartIDAndGoodsID
 	 */
-	public void deleteGoods(String cartID,String goodsID);
+	public void deleteGoods(HashMap<String, Object> cartIDAndGoodsID);
 
 	/**
 	 * 更新商品信息
 	 * 
-	 * @param cartID,goodsID
+	 * @param cartIDAndGoodsID
 	 */
-	public void updateGoods(String cartID,String goodsID);
+	public void updateGoods(HashMap<String, Object> cartIDAndGoodsID);
 
 	/**
 	 * 按商品名查询商品
 	 * 
-	 * @param goodsName
+	 * @param cartIDAndGoodsName
 	 * @return List<Goods>
 	 */
-	public List<Goods> queryGoodsByGoodsName(String goodsName);
+	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> cartIDAndGoodsName);
 
 	/**
 	 * 按ID查询商品
 	 * 
-	 * @param goodsID
+	 * @param cartIDAndGoodsID
 	 * @return Goods
 	 */
-	public Goods queryGoodsByGoodsID(String goodsID);
+	public Goods queryGoodsByGoodsID(HashMap<String, Object> cartIDAndGoodsID);
 
 	/**
 	 * 列出所有商品
 	 * 
+	 * @param cartID
 	 * @return List<Goods>
 	 */
-	public List<Goods> listAll();
+	public List<Goods> listAll(String cartID);
 
 
 }

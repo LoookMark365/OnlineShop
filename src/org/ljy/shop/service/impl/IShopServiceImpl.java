@@ -1,56 +1,53 @@
 package org.ljy.shop.service.impl;
 
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import org.ljy.domain.Goods;
-import org.ljy.domain.Shop;
 import org.ljy.shop.service.IShopService;
 
 public class IShopServiceImpl implements IShopService {
 
 	@Override
-	public void openShop(Shop shop) {
+	public void openShop(HashMap<String, Object> userAndShop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void addGoods(Goods goods) {
+	public void addGoods(HashMap<String, Object> shopIDAndGoods) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void removeGoods(Goods goods) {
+	public void removeGoods(HashMap<String, Object> shopIDAndGoods) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updateGoods(Goods goods) {
+	public void updateGoods(HashMap<String, Object> shopIDAndGoods) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public List<Goods> queryGoodsByGoodsName(ArrayList<String> goodsNameAndShopID) {
+	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> shopIDAndGoodsName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(ArrayList<String> goodsIDAndShopID) {
+	public Goods queryGoodsByGoodsID(HashMap<String, Object> shopIDAndGoodsID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> queryAll(String goodsID) {
+	public List<Goods> queryAll(String shopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-
 
 }
