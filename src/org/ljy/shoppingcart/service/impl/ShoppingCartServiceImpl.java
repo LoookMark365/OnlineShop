@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.ljy.domain.Goods;
 import org.ljy.shoppingcart.service.IShoppingCartService;
+import org.springframework.stereotype.Service;
 
+@Service("shoppingService")
 public class ShoppingCartServiceImpl implements IShoppingCartService {
 
 	@Override

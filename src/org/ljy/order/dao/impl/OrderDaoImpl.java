@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.ljy.domain.Order;
 import org.ljy.order.dao.IOrderDao;
+import org.springframework.stereotype.Repository;
 
+@Repository("orderDao")
 public class OrderDaoImpl implements IOrderDao {
 
 	@Override

@@ -4,7 +4,9 @@ import java.util.HashMap;
 
 import org.ljy.domain.Payment;
 import org.ljy.payment.dao.IPaymentDao;
+import org.springframework.stereotype.Repository;
 
+@Repository("paymentDao")
 public class PaymentDaoImpl implements IPaymentDao {
 
 	@Override

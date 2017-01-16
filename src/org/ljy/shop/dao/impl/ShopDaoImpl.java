@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.ljy.domain.Goods;
 import org.ljy.shop.dao.IShopDao;
+import org.springframework.stereotype.Repository;
 
+@Repository("shopDao")
 public class ShopDaoImpl implements IShopDao {
 
 	@Override

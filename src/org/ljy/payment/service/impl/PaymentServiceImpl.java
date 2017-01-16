@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.ljy.domain.Bankcard;
 import org.ljy.payment.service.IPaymentService;
+import org.springframework.stereotype.Service;
 
+@Service("paymentService")
 public class PaymentServiceImpl implements IPaymentService {
 
 	@Override

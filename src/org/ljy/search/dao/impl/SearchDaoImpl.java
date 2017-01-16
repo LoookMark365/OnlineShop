@@ -6,7 +6,9 @@ import org.ljy.domain.Goods;
 import org.ljy.domain.Shop;
 import org.ljy.domain.User;
 import org.ljy.search.dao.ISearchDao;
+import org.springframework.stereotype.Repository;
 
+@Repository("searchDao")
 public class SearchDaoImpl implements ISearchDao {
 
 	@Override

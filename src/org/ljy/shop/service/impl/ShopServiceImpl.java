@@ -5,8 +5,10 @@ import java.util.List;
 
 import org.ljy.domain.Goods;
 import org.ljy.shop.service.IShopService;
+import org.springframework.stereotype.Service;
 
-public class IShopServiceImpl implements IShopService {
+@Service("shopService")
+public class ShopServiceImpl implements IShopService {
 
 	@Override
 	public void openShop(HashMap<String, Object> userAndShop) {

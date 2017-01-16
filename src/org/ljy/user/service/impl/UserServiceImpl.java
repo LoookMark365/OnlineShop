@@ -6,7 +6,7 @@ import org.ljy.domain.User;
 import org.ljy.user.service.IUserService;
 import org.springframework.stereotype.Service;
 
-@Service("userServiceImpl")
+@Service("userService")
 public class UserServiceImpl implements IUserService {
 
 	@Override

@@ -6,8 +6,8 @@ import java.util.List;
 import org.ljy.domain.Goods;
 import org.ljy.shoppingcart.dao.IShoppingCartDao;
 import org.springframework.stereotype.Repository;
-@Repository("shoppingCartImpl")
-public class ShoppingCartImpl implements IShoppingCartDao {
+@Repository("shoppingCartDao")
+public class ShoppingCartDaoImpl implements IShoppingCartDao {
 
 	@Override
 	public void addShoppingCart(HashMap<String, Object> userIDAndCart) {

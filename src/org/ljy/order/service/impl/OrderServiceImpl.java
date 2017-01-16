@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.ljy.domain.Order;
 import org.ljy.order.service.IOrderService;
+import org.springframework.stereotype.Service;
 
+@Service("orderService")
 public class OrderServiceImpl implements IOrderService {
 
 	@Override

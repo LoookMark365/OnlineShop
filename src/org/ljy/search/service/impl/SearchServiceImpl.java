@@ -6,7 +6,9 @@ import org.ljy.domain.Goods;
 import org.ljy.domain.Shop;
 import org.ljy.domain.User;
 import org.ljy.search.service.ISearchService;
+import org.springframework.stereotype.Service;
 
+@Service("searchService")
 public class SearchServiceImpl implements ISearchService{
 
 	@Override

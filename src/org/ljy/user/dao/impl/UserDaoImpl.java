@@ -5,7 +5,7 @@ import java.util.List;
 import org.ljy.domain.User;
 import org.ljy.user.dao.IUserDao;
 import org.springframework.stereotype.Repository;
-@Repository("userDaoImpl")
+@Repository("userDao")
 public class UserDaoImpl implements IUserDao {
 
 	@Override
