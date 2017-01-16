@@ -10,6 +10,12 @@ import org.springframework.stereotype.Repository;
 public class ShoppingCartImpl implements IShoppingCartDao {
 
 	@Override
+	public void addShoppingCart(HashMap<String, Object> userIDAndCart) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	@Override
 	public void addGoods(HashMap<String, Object> cartIDGoodsIDAndGoodsNum) {
 		// TODO Auto-generated method stub
 		

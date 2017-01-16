@@ -6,6 +6,14 @@ import java.util.List;
 import org.ljy.domain.Goods;
 
 public interface IShoppingCartDao {
+
+	/**
+	 * 产生一个新的购物车
+	 * 
+	 * @param userIDAndCart
+	 */
+	public void addShoppingCart(HashMap<String, Object> userIDAndCart);
+
 	/**
 	 * 添加商品
 	 * 
@@ -50,6 +58,5 @@ public interface IShoppingCartDao {
 	 * @return List<Goods>
 	 */
 	public List<Goods> listAll(String cartID);
-
 
 }
