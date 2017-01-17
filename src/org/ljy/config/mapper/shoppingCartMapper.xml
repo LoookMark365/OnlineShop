@@ -3,10 +3,10 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.ljy.domain.ShoppingCart">
-	<sql id="totalColumn">shoppingcart_id,user_id,goods_id,date</sql>
+	<sql id="totalColumn">cart_id,user_id,goods_id,date</sql>
 	
-	<sql id="totalVar">#{shoppingCartID},#{userID},#{goodsID},#{date}</sql>
-	<insert id="addGoods" parameterType="org.ljy.domain.Goods">
+	<sql id="totalVar">#{cartID},#{userID},#{goodsID},#{date}</sql>
+	<insert id="addGoods" parameterType="map">
 		insert into shoppingcarts(
 		<include refid="totalColumn"/>
 		) values(
@@ -14,5 +14,11 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		)
 	</insert>
 	
-	<delete id="deleteGoods">delete from goods</delete>
+	<delete id="deleteGoods" parameterType="map">delete from shoppingcarts where cart_id=#{cartID} and goods_id=#{goodsID}</delete>
+	
+	<select id="listAllGoods" parameterType="String" resultType="org.ljy.domain.Goods">
+		select * from goods where goods_id in( select goods_id from shoppingcart where cart_id=#{cartID}
+		)
+	</select>
+	
 </mapper>

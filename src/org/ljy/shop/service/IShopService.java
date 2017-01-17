@@ -3,7 +3,7 @@ package org.ljy.shop.service;
 import java.util.HashMap;
 import java.util.List;
 
-import org.ljy.domain.Goods;
+import org.ljy.domain.Shop;
 
 public interface IShopService {
 	/**
@@ -14,47 +14,35 @@ public interface IShopService {
 	public void openShop(HashMap<String, Object> userAndShop);
 
 	/**
-	 * 向商店添加商品
-	 * 
-	 * @param shopIDAndGoods
+	 * 删除一个商店
+	 * @param shop
 	 */
-	public void addGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public void closeShop(Shop shop);
+	
 	/**
-	 * 从商店移除商品
-	 * 
-	 * @param shopIDAndGoods
+	 * 修改商店信息
+	 * @param shop
 	 */
-	public void removeGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public void updateShop(Shop shop);
+	
 	/**
-	 * 更新商品信息
-	 * 
-	 * @param shopIDAndGoods
+	 * 按商店名查找商店
+	 * @param shopName
+	 * @return List<Shop>
 	 */
-	public void updateGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public List<Shop> queryShopByShopName(String shopName);
+	
 	/**
-	 * 按商品名查询商品
-	 * 
-	 * @param shopIDAndGoodsName
-	 * @return List<Goods>
-	 */
-	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> shopIDAndGoodsName);
-
-	/**
-	 * 按商品ID查询商品
-	 * 
-	 * @param shopIDAndGoodsID
-	 * @return Goods
-	 */
-	public Goods queryGoodsByGoodsID(HashMap<String, Object> shopIDAndGoodsID);
-
-	/**
-	 * 列出所有商品
-	 * 
+	 * 按商店ID查找商店
 	 * @param shopID
-	 * @return List<Goods>
+	 * @return Shop
 	 */
-	public List<Goods> queryAll(String shopID);
+	public Shop queryShopByShopID(String shopID);
+	
+	/**
+	 * 列出所有商店
+	 * @return
+	 */
+	public List<Shop> listAllShops();
+	
 }

@@ -1,53 +1,47 @@
 package org.ljy.shop.dao;
 
-import java.util.HashMap;
 import java.util.List;
 
-import org.ljy.domain.Goods;
+import org.ljy.domain.Shop;
 
 public interface IShopDao {
+	
 	/**
-	 * 添加商品
-	 * 
-	 * @param shopIDAndGoods
+	 * 创建新的商店
+	 * @param shop
 	 */
-	public void addGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public void addShop(Shop shop);
+	
 	/**
-	 * 删除商品
-	 * 
-	 * @param shopIDAndGoods
+	 * 删除一个商店
+	 * @param shop
 	 */
-	public void deleteGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public void deleteShop(Shop shop);
+	
 	/**
-	 * 更新商品信息
-	 * 
-	 * @param shopIDAndGoods
+	 * 修改商店信息
+	 * @param shop
 	 */
-	public void updateGoods(HashMap<String, Object> shopIDAndGoods);
-
+	public void updateShop(Shop shop);
+	
 	/**
-	 * 按商品名查询商品
-	 * 
-	 * @param shopIDAndGoodsName
-	 * @return List<Goods>
+	 * 按商店名查找商店
+	 * @param shopName
+	 * @return List<Shop>
 	 */
-	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> shopIDAndGoodsName);
-
+	public List<Shop> queryShopByShopName(String shopName);
+	
 	/**
-	 * 按商品ID查询商品
-	 * 
-	 * @param shopIDAndGoodsName
-	 * @return Goods
-	 */
-	public Goods queryGoodsByGoodsID(HashMap<String, Object> shopIDAndGoodsName);
-
-	/**
-	 * 列出所有商品
-	 * 
+	 * 按商店ID查找商店
 	 * @param shopID
-	 * @return List<Goods>
+	 * @return Shop
 	 */
-	public List<Goods> queryAll(String shopID);
+	public Shop queryShopByShopID(String shopID);
+	
+	/**
+	 * 列出所有商店
+	 * @return
+	 */
+	public List<Shop> listAllShops();
+	
 }

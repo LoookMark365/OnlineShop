@@ -3,7 +3,7 @@ package org.ljy.shop.service.impl;
 import java.util.HashMap;
 import java.util.List;
 
-import org.ljy.domain.Goods;
+import org.ljy.domain.Shop;
 import org.ljy.shop.service.IShopService;
 import org.springframework.stereotype.Service;
 
@@ -17,37 +17,31 @@ public class ShopServiceImpl implements IShopService {
 	}
 
 	@Override
-	public void addGoods(HashMap<String, Object> shopIDAndGoods) {
+	public void closeShop(Shop shop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void removeGoods(HashMap<String, Object> shopIDAndGoods) {
+	public void updateShop(Shop shop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updateGoods(HashMap<String, Object> shopIDAndGoods) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> shopIDAndGoodsName) {
+	public List<Shop> queryShopByShopName(String shopName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(HashMap<String, Object> shopIDAndGoodsID) {
+	public Shop queryShopByShopID(String shopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> queryAll(String shopID) {
+	public List<Shop> listAllShops() {
 		// TODO Auto-generated method stub
 		return null;
 	}

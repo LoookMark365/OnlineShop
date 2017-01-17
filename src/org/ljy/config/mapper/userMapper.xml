@@ -11,18 +11,20 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	
 	<insert id="addUser" parameterType="org.ljy.domain.User">
 		insert into users(
-		<include refid="userTotalColumn"/>
+		<include refid="userTotalColumn" />
 		) values(
-		<include refid="userTotalVar"/>
+		<include refid="userTotalVar" />
 		)
 	</insert>
 	
-	<delete id="deleteUserByUserName" parameterType="java.lang.String">delete from users where user_name=#{userName}</delete>
+	<delete id="deleteUserByUserName" parameterType="java.lang.String">delete from
+		users where user_name=#{userName}</delete>
 	
-	<delete id="deleteUserByUserID" parameterType="java.lang.String">delete from users where user_id=#{userID}</delete>
+	<delete id="deleteUserByUserID" parameterType="java.lang.String">delete from users
+		where user_id=#{userID}</delete>
 	
 	<update id="updateUser" parameterType="org.ljy.domain.User">
-		update users set user_type=#{userType}, user_name=#{userName} password=#{password}
+		update users set user_type=#{userType}, user_name=#{userName} password=#{password} where user_id=#{userID}
 	</update>
 	
 	<select id="queryUserByUserName" parameterType="java.lang.String" resultType="org.ljy.domain.User">select * from users where user_name=#{userName}</select>

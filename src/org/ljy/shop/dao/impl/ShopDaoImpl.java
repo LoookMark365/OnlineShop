@@ -1,9 +1,8 @@
 package org.ljy.shop.dao.impl;
 
-import java.util.HashMap;
 import java.util.List;
 
-import org.ljy.domain.Goods;
+import org.ljy.domain.Shop;
 import org.ljy.shop.dao.IShopDao;
 import org.springframework.stereotype.Repository;
 
@@ -11,37 +10,37 @@ import org.springframework.stereotype.Repository;
 public class ShopDaoImpl implements IShopDao {
 
 	@Override
-	public void addGoods(HashMap<String, Object> shopIDAndGoods) {
+	public void addShop(Shop shop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void deleteGoods(HashMap<String, Object> shopIDAndGoods) {
+	public void deleteShop(Shop shop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public void updateGoods(HashMap<String, Object> shopIDAndGoods) {
+	public void updateShop(Shop shop) {
 		// TODO Auto-generated method stub
 		
 	}
 
 	@Override
-	public List<Goods> queryGoodsByGoodsName(HashMap<String, Object> shopIDAndGoodsName) {
+	public List<Shop> queryShopByShopName(String shopName) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public Goods queryGoodsByGoodsID(HashMap<String, Object> shopIDAndGoodsName) {
+	public Shop queryShopByShopID(String shopID) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public List<Goods> queryAll(String shopID) {
+	public List<Shop> listAllShops() {
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -57,6 +57,6 @@ public interface IShoppingCartDao {
 	 * @param cartID
 	 * @return List<Goods>
 	 */
-	public List<Goods> listAll(String cartID);
+	public List<Goods> listAllGoods(String cartID);
 
 }

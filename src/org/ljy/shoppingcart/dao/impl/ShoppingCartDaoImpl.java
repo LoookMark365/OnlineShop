@@ -46,7 +46,7 @@ public class ShoppingCartDaoImpl implements IShoppingCartDao {
 	}
 
 	@Override
-	public List<Goods> listAll(String cartID) {
+	public List<Goods> listAllGoods(String cartID) {
 		// TODO Auto-generated method stub
 		return null;
 	}

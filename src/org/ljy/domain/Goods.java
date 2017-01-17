@@ -11,7 +11,7 @@ import org.ljy.common.GoodsType;
  */
 public class Goods {
 	private String goodsID;// 商品ID
-	private String name;// 商品名
+	private String goodsName;// 商品名
 	private GoodsType goodsType;// 商品种类
 	private double price;// 价格
 	private double discount;// 折扣
@@ -26,12 +26,12 @@ public class Goods {
 		this.goodsID = goodsID;
 	}
 
-	public String getName() {
-		return name;
+	public String getGoodsName() {
+		return goodsName;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setGoodsName(String goodsName) {
+		this.goodsName = goodsName;
 	}
 
 	public double getPrice() {
